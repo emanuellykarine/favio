@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Cabecalho from './componentes/Cabecalho';
+import Rodape from './componentes/Rodape';
 
+
+/*arquivo app JSX
+componente funcional*/
 function App() {
+  /*todo componente deve retornar um html  */
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    /*O react susbtitui classname por class pq class é palavra reservada do js*/
+    <>
+    <img src='logo.png' alt='logotipo'></img>
+    <Cabecalho titulo="fav.io" subtitulo="o melhor num sei oq la"/>
+    <Rodape/>
+    </>
   );
 }
 
