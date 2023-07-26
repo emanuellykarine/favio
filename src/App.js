@@ -10,9 +10,8 @@ function App() {
   return (
     /*O react susbtitui classname por class pq class é palavra reservada do js*/
     <>
-    <img src='logo.png' alt='logotipo'></img>
-    <Cabecalho titulo="fav.io" subtitulo="o melhor num sei oq la"/>
-    <Rodape/>
+    <Cabecalho logo="logo192.png" titulo="FAV.IO" />
+    <Rodape />
     </>
   );
 }
