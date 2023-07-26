@@ -1,15 +1,23 @@
 .cabecalho{
     display: flex;
-    justify-content: space-around;
+    margin: 0;
     background-color: hotpink;
 }
 
-.titulo{
-    font-size: 3rem;
-   color: aliceblue;
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
 }
 
-.subtitulo{
-    font-size: 2rem;
+.titulo{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 30px;
+    font-size: 4rem;
+    margin-left: 10px;
+    color: aliceblue;
 }
+
 
