@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/favio/static/css/main.93537f48.css",
+    "main.js": "/favio/static/js/main.be388d08.js",
+    "static/js/787.f04ad837.chunk.js": "/favio/static/js/787.f04ad837.chunk.js",
+    "index.html": "/favio/index.html",
+    "main.93537f48.css.map": "/favio/static/css/main.93537f48.css.map",
+    "main.be388d08.js.map": "/favio/static/js/main.be388d08.js.map",
+    "787.f04ad837.chunk.js.map": "/favio/static/js/787.f04ad837.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93537f48.css",
+    "static/js/main.be388d08.js"
+  ]
+}
