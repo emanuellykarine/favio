@@ -2,8 +2,15 @@ import React, { useState } from 'react'
 
 const Estados = () => {
 
-    const [nome, setNome]=useState("")
-    const [url, setUrl]=useState("")
+    const [nome, setNome]=useState("Google")
+    const [url, setUrl]=useState("http://www.google.com")
+    const [favoritos, setFavoritos]=useState([])
+
+    function adicionaFavorito(nome, url){
+        let favorito={nome, url}
+        setFavoritos([...favoritos, favorito])
+        console.log(favoritos)
+    }
 
     function handleInput(valor){
         setNome(valor)
@@ -16,7 +23,17 @@ const Estados = () => {
     <input type="text" value={nome} onChange={(e)=>handleInput(e.target.value)}/>
     <h1>{url}</h1>
     <input type="text" value={url} onChange={(e)=>setUrl(e.target.value)}/>
-    <button>Adicionar</button>
+    <button onClick={()=>adicionaFavorito(nome,url)}>Adicionar</button>
+    <h1>Favoritos</h1>
+    <ul>
+    {favoritos.map(
+        (elemento)=>{
+            return (
+                <li>{elemento.nome}</li>
+            )
+    }
+    )}
+    </ul>
     </div>
   )
 }
