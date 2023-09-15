@@ -1,6 +1,7 @@
 import './App.css';
 import Cabecalho from './componentes/Cabecalho';
 import Rodape from './componentes/Rodape';
+import Conteudo from './componentes/Conteudo';
 import Estados from './exemplos/Estados';
 
 
@@ -11,8 +12,9 @@ function App() {
   return (
     /*O react susbtitui classname por class pq class é palavra reservada do js*/
     <>
-    {/*<Cabecalho logo="barbie.png" titulo="BARBIE" />*/}
-    {/*<Rodape />*/}
+    <Cabecalho logo="barbie.png" titulo="BARBIE" />
+    <Conteudo/>
+    <Rodape />
     <Estados/>
     </>
   );
