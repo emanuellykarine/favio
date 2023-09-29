@@ -2,7 +2,6 @@ import './App.css';
 import Cabecalho from './componentes/Cabecalho';
 import Rodape from './componentes/Rodape';
 import Conteudo from './componentes/Conteudo';
-import Estados from './exemplos/Estados';
 
 
 /*arquivo app JSX
@@ -15,7 +14,6 @@ function App() {
     <Cabecalho logo="barbie.png" titulo="BARBIE" />
     <Conteudo/>
     <Rodape />
-    <Estados/>
     </>
   );
 }
