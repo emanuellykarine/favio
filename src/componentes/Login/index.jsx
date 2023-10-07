@@ -1,14 +1,22 @@
 import React, { useState } from 'react'
-import styles from './Login.module.css'
 
 const Login = () => {
 
     const [email, setEmail]=useState('');
     const [senha, setSenha]=useState('')
-    
+
+    const salvosLocalStorage = JSON.parse(localStorage.getItem("salvar")) || [];
+
+
       function buscarUsuario(){
-        
-      }
+            const findUsers = salvosLocalStorage.find((usuario) => usuario.email === email && usuario.senha === senha);
+      
+            if(findUsers) {
+                alert ("Login com sucesso!");
+            } else {
+                alert("Dados inválidos. Tente novamente.");
+            }
+        }
     
       return (
        <>
@@ -16,7 +24,8 @@ const Login = () => {
     
            <label> Email</label> 
                 <input name='email' onChange={(evento)=> 
-                    {setEmail(evento.target.value);}}>
+                    {setEmail(evento.target.value);
+                    }}>
                 </input> <br/>
     
             <label> Senha </label> 
@@ -24,7 +33,7 @@ const Login = () => {
                     {setSenha(evento.target.value);}}>
                 </input> <br/>
     
-           <input type="button" value="Login" onClick={()=> buscarUsuario()}/>
+           <input type="button" value="Login" onClick={buscarUsuario}/>
     
         </>
       )
