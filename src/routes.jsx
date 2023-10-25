@@ -1,6 +1,10 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Principal from './paginas/Principal'
+import Cadastro from './paginas/Cadastro'
+import Login from './paginas/Login'
 
-const routes = () => {
+const Rotas = () => {
     return (
         <BrowserRouter>
             <Routes>
@@ -12,4 +16,4 @@ const routes = () => {
     )
 }
 
-export default routes
+export default Rotas;
